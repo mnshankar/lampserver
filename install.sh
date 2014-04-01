@@ -59,8 +59,6 @@ sudo mv composer.phar /usr/local/bin/composer
 
 #install codeception globally.. phpunit comes with it :-)
 composer global require "codeception/codeception:*"
-# add phpunit to path so it is available in command line
-echo "PATH=\$PATH:~/.composer/vendor/bin" >> ~/.profile
 #since we spend so much time in the terminal, why not make it a bit prettier?
 echo "--- Installing Oh-My-Zsh ---"
 # Install zsh
