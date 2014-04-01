@@ -72,7 +72,7 @@ sudo su - vagrant -c 'wget https://github.com/robbyrussell/oh-my-zsh/raw/master/
 # Set default to the lovely "ys" theme.
 sudo sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/' /home/vagrant/.zshrc
 # Add /sbin to PATH.. And phpunit/codeception
-sudo sed -i 's=:/bin:=:/bin:/sbin:/usr/sbin:~/.composer/vendor/bin:=' /home/vagrant/.zshrc
+sudo sed -i 's=:/bin:=:/bin:/sbin:/usr/sbin:/home/vagrant/.composer/vendor/bin:=' /home/vagrant/.zshrc
 # Change vagrant user's default shell
 chsh vagrant -s $(which zsh);
 
